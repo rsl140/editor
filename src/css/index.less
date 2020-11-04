@@ -1,0 +1,48 @@
+ul li {
+  list-style-type: none;
+}
+
+#editor {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.btn_box {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+
+  ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    padding: 0;
+    border: 1px solid #ddd;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+
+    li {
+      .title_name, .color_name {
+        cursor: pointer;
+      }
+
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+
+  &:hover {
+    ul {
+      display: block;
+    }
+  }
+}
