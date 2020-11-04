@@ -13,8 +13,9 @@ class Menus {
 
   // 初始化
   init () {
-    this.element.onmousedown = () => {
+    this.element.onmousedown = (e: Event) => {
       document.execCommand(this.target, false, this.value)
+      e.preventDefault()
     }
   }
 }
