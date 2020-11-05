@@ -19,6 +19,9 @@ class Menus {
       document.execCommand(this.target, false, this.value)
       e.preventDefault()
     }
+    this.element.onmouseup = (e: Event) => {
+      this.selectionRange.saveSelection()
+    }
   }
 }
 export default Menus
