@@ -9,7 +9,7 @@ window.onload = () => {
   let editor = document.getElementById('editor') as HTMLElement
   let selectionRange = new SelectionRange(editor)
   selectionRange.init()
-  // 加粗11111
+  // 加粗
   let blodMenu = new Menus(blod, 'bold', 'null', selectionRange)
   blodMenu.init()
 
