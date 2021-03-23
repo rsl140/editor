@@ -2,6 +2,7 @@
 name: 提交 bug
 about: 请大家一定要按照该模板填写，以方便我们更快复现，否则该 issue 将不予受理！
 ---
+<!-- by bug-issue -->
 
 ## bug 描述
 
